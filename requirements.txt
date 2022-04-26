@@ -1,3 +1,4 @@
 pyspark
 simplejson
-google.cloud
+google-cloud
+gzip
