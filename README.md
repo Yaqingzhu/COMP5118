@@ -29,7 +29,7 @@ We provide an egg file, located in `dist/xmap-0.1.0-py3.5.egg`, that you could u
 ## Running the tests
 ### Prerequisites
 X-MAP is tested on real-traces from [Amazon](https://snap.stanford.edu/data/web-Amazon.html). For current implementation, the input data follows the below-mentioned format:
-`<userid>\t<itemid>\t<rating>\t<timestamp>`.
+`<userid>, <itemid>, <rating>, <timestamp>`.
 
 Note that the timestamp is required if you want to implement algorithms incorporating temporal behaviour of users which is also supported by AlterEgos.
 
