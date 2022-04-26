@@ -1,0 +1,36 @@
+init:
+    path_hdfs: ./
+    path_movie: movie.txt
+    path_book: book.txt
+    path_music: music.txt
+    is_debug: True
+    seed: 666666
+    num_partition: 30
+baseliner:
+    num_atleast_rating: 5
+    size_subset: 6666
+    date_from: 2012
+    date_to: 2013
+    num_left: 0
+    ratio_split: 0.2
+    ratio_both: 0.8
+    calculate_baseline_sim_method: adjust_cosine
+    calculate_baseline_weighting: 50
+extender:
+    extend_among_topk: 50
+generator:
+    private_flag: True
+    mapping_range: 1
+    private_epsilon: 0.6
+    private_rpo: 0.1
+recommender:
+    calculate_xmap_sim_method: cosine_item
+    calculate_xmap_sim_method_2: cosine_item
+    calculate_xmap_weighting: 50
+    mapping_range: 10
+    private_flag: True
+    private_epsilon: 0.3
+    private_rpo: 0.1
+    decay_alpha: 0.3
+    test_param: num_left
+    test_param_v: 50
